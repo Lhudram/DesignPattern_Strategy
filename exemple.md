@@ -169,6 +169,6 @@ class Main {
 -[x] Comportement
 
 ?[Le pattern Strategy :]
--[ ]
+-[ ] Fait apparaître l'implémentation des méthodes directement dans le code de la classe concernée
 -[X] Rend les algorithmes interchangeables
 
