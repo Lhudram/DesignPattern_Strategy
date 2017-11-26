@@ -177,8 +177,7 @@ class Main {
 -[ ] Dependency Inversion principle
 -[X] Single Responsibility principle
 
-?["Il a vraiment peu d’inconvénients ! Je vais pourvoir l’utiliser partout !"
-Cette personne :]
+?["Il a vraiment peu d’inconvénients ! Je vais pourvoir l’utiliser partout !" Cette personne : ]
 -[ ] A raison
 -[X] N’a pas raison
 -[ ] Le Luxembourg
