@@ -52,7 +52,7 @@ On implémente ensuite les deux classes qui l'implémenteront :
 
 	}
 	
-Enfin, on implémente la classe qui se servira du Pattern :
+Enfin, on implémente la classe qui se servira du pattern :
 
 	public class Article {
 
@@ -148,7 +148,7 @@ class Main {
 
 		public static void main(String[] args) {
 			
-			Article article1 = new Article("Livre : 'Tout savoir sur le Pattern Strategy'",25);
+			Article article1 = new Article("Livre : 'Tout savoir sur le pattern Strategy'",25);
 			Article article2 = new Article("Piano steinway & sons d274",155690);
 			
 			article1.payer(new PaypalStrategy("idExemple", "passwordExemple"));
@@ -163,7 +163,12 @@ class Main {
 
 # Quizz !
 
-?[A quelle famille de Patterns le Pattern Strategy apartient-il ?]
+?[A quelle famille de Patterns le pattern Strategy apartient-il ?]
 -[ ] Création
 -[ ] Structuration
 -[x] Comportement
+
+?[Le pattern Strategy :]
+-[ ]
+-[X] Rend les algorithmes interchangeables
+
