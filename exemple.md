@@ -172,3 +172,13 @@ class Main {
 -[ ] Fait apparaître l'implémentation des méthodes directement dans le code de la classe concernée
 -[X] Rend les algorithmes interchangeables
 
+?[Quel est le principe SOLID dont le pattern Strategy empêche la violation ?]
+-[ ] Liskov Substitution Principle
+-[ ] Dependency Inversion principle
+-[X] Single Responsibility principle
+
+?["Il a vraiment peu d’inconvénients ! Je vais pourvoir l’utiliser partout !"
+Cette personne :]
+-[ ] A raison
+-[X] N’a pas raison
+-[ ] Le Luxembourg
