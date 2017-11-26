@@ -5,7 +5,7 @@ Vous ouvrez votre panier, et là, le site vous demande d'effectuer l'action abst
 Il est possible de payer de différentes manières : directement par carte, par Paypal...
 La méthode "payer" peut être implémentée de différentes manières : c'est là l'intérêt du Pattern Strategy.
 
-![UML Diagram](https://raw.githubusercontent.com/AurelienTauvy/playground-BmG3hyDD/master/LE_PATTERN.png)
+![UML Diagram](https://raw.githubusercontent.com/Lhudram/DesignPattern_Strategy/master/UML_Exemple.png)
 
 # Implémentation
 
