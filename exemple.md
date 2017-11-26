@@ -5,7 +5,78 @@ Vous ouvrez votre panier, et là, le site vous demande d'effectuer l'action abst
 Il est possible de payer de différentes manières : directement par carte, par Paypal...
 La méthode "payer" peut être implémentée de différentes manières : c'est là l'intérêt du Pattern Strategy.
 
+![UML Diagram](https://raw.githubusercontent.com/AurelienTauvy/playground-BmG3hyDD/master/LE_PATTERN.png)
+
 # Implémentation
+
+On commence par l’interface Strategy, qui implémente la/les méthodes qui changeront. Ici, c'est la méthode payer qu'on déclare (avec un montant, bien entendu).
+
+	public interface PaiementStrategy {
+		public void payer(int montant);
+	}
+
+On implémente ensuite les deux classes qui l'implémenteront :
+
+	public class PaypalStrategy implements PaiementStrategy{
+	
+		private String id;
+		private String password;
+	
+		public PaypalStrategy(String email, String pass){
+			this.id=id;
+			this.password=pass;
+		}
+	
+		@Override
+		public void payer(int montant) {
+			System.out.println(montant + "€ payés par Paypal.");
+		}
+
+	}
+	public class CarteDeCreditStrategy implements PaiementStrategy {
+
+		private String numeroCarte;
+		private String cryptogramme;
+		private String dateExpiration;
+
+		public CarteDeCreditStrategy(String num, String crypto, String date) {
+			this.numeroCarte = num;
+			this.cryptogramme = crypto;
+			this.dateExpiration = date;
+		}
+	
+		@Override
+		public void payer(int montant) {
+			System.out.println(montant + "€ payés par carte de crédit.");
+		}
+
+	}
+	
+Enfin, on implémente la classe qui se servira du Pattern :
+
+	public class Article {
+
+		private String nom;
+		private int prix;
+
+		public Article(String nom, int prix) {
+			this.nom = nom;
+			this.prix = prix;
+		}
+
+		public String getNom() {
+			return this.nom;
+		}
+
+		public int getPrix() {
+			return this.prix;
+		}
+	
+		public void payer(PaiementStrategy methode){
+			int montant=this.getPrix();
+			methode.payer(montant);
+		}
+	}
 
 
 
