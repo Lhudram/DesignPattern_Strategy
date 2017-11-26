@@ -1,6 +1,6 @@
 title: Design Pattern Strategy
 plan:
 - title: Présentation
-  statement: statement.md
+  statement: presentation.md
 - title: Exemple
   statement: statement.md
