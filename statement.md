@@ -19,6 +19,13 @@ System.out.println(message);
 //}
 ```
 
+# Quizz !
+
+?[A quelle famille de Patterns le Pattern Strategy apartient-il ?]
+-[ ] Création
+-[ ] Structuration
+-[x] Comportement
+
 # Advanced usage
 
 If you want a more complex example (external libraries, viewers...), use the [Advanced Java template](https://tech.io/select-repo/385)
