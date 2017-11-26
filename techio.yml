@@ -1,5 +1,6 @@
 title: Design Pattern Strategy
 plan:
-- title: Java Snippet
+- title: Présentation
+  statement: statement.md
 - title: Exemple
   statement: statement.md
