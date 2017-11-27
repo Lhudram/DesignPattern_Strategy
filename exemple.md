@@ -22,7 +22,7 @@ On implémente ensuite les deux classes qui l'implémenteront :
 		private String id;
 		private String password;
 	
-		public PaypalStrategy(String email, String pass){
+		public PaypalStrategy(String id, String pass){
 			this.id=id;
 			this.password=pass;
 		}
@@ -90,7 +90,7 @@ class PaypalStrategy implements PaiementStrategy{
 	private String id;
 	private String password;
 	
-	public PaypalStrategy(String email, String pass){
+	public PaypalStrategy(String id, String pass){
 		this.id=id;
 		this.password=pass;
 	}
@@ -153,8 +153,7 @@ class Main {
 			
 			article1.payer(new PaypalStrategy("idExemple", "passwordExemple"));
 			
-			//pay by credit card
-			article2.payer(new CarteDeCreditStrategy( "1234567890123456", "786", "12/15"));
+			article2.payer(new CarteDeCreditStrategy( "1234567890123456", "789", "26/11/2017"));
 		}
 
 }
@@ -172,10 +171,11 @@ class Main {
 -[ ] Fait apparaître l'implémentation des méthodes directement dans le code de la classe concernée
 -[X] Rend les algorithmes interchangeables
 
-?[Quel est le principe SOLID dont le pattern Strategy empêche la violation ?]
+?[Quel sont les principe SOLID dont le pattern Strategy empêche la violation ?]
 -[ ] Liskov Substitution Principle
--[ ] Dependency Inversion principle
--[X] Single Responsibility principle
+-[ ] Dependency Inversion Principle
+-[X] Single Responsibility Principle
+-[X] Open-Closed Principle
 
 ?["Il a vraiment peu d’inconvénients ! Je vais pourvoir l’utiliser partout !" Cette personne : ]
 -[ ] A raison
